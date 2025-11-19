@@ -9,9 +9,9 @@ removeFromNavigation: false
 eleventyNavigation:
   key: Home
   order: 1
-  title: null
-  parent: null
-  url: null
+  title:
+  parent:
+  url:
 pageLink: /
 permalink: >-
   {% if pageLink == 'blog' or pageLink == 'Blog' %}/{{pageLink | slugify}}{% if
@@ -21,7 +21,7 @@ permalink: >-
   }}/index.html{% else %}/{% assign title = title | slugify %}{{
   page.filePathStem | fileSubstringFilter | append: title | downcase
   }}/index.html{%endif %}
-metaDesc: null
+metaDesc:
 customCode:
   headCode: ''
   bodyCode: ''
@@ -31,7 +31,7 @@ hero:
   _bookshop_name: sections/fullImageHero
   content:
     highlightEybrow: false
-    sectionId: null
+    sectionId:
     eyebrow: Building a website shouldn't be hard
     headline: A Modern Small Business Template
     description: >-
@@ -49,77 +49,121 @@ hero:
     image:
       _bookshop_name: generic/image
       imagePath: /assets/uploads/home/142005.jpg
-      imageAlt: null
-      yAxisPosition: null
-      imageSizes: null
-      class: null
-      imageNumber: null
-      imageWidths: null
+      imageAlt:
+      yAxisPosition:
+      imageSizes:
+      imageWidths:
+      class:
+      imageNumber:
   styles:
     color_group: primary
     contentAlignment: left
     textAlignment: left
     backgroundOpacity: 65
 content_blocks:
-  - _bookshop_name: sections/servicesSection
-    content:
-      sectionId: null
-      heading:
-        _bookshop_name: generic/heading
-        content:
-          highlightEyebrow: false
-          eyebrow: ''
-          headline: How we can help
-          description: ''
-          buttons: []
-          headingHierarchy: h2
-        styles:
-          contentAlignment: center
-          textAlignment: center
-          visualInterest: none
-          visualInterestColor: '#000000'
-          highContrast: false
-          contrastColorGroup: null
-          contrastAgainst: null
-          textClassOverride: null
-      showNote: true
-    styles:
-      color_group: 66cae480-4329-460a-a1fa-5a80a3569411
-      cardStyle: defaultCard
-  - _bookshop_name: sections/reviewCards
-    content:
-      sectionId: null
-      heading:
-        _bookshop_name: generic/heading
-        content:
-          highlightEyebrow: false
-          eyebrow: ''
-          headline: Kind Words from the Community
-          description: ''
-          buttons: []
-          headingHierarchy: h2
-        styles:
-          contentAlignment: center
-          textAlignment: center
-          visualInterest: none
-          visualInterestColor: '#000000'
-          highContrast: false
-          contrastColorGroup: null
-          contrastAgainst: null
-          textClassOverride: null
-      usePersonImage: false
-      reviews:
-        - review: cf5af1f3-4b28-4280-a664-0ef482ae9215
-          card_color_group: 66cae480-4329-460a-a1fa-5a80a3569411
-          colorFromGroup: background
-        - review: e8b58d19-77b3-4e15-9d00-88808b9dc2b4
-          card_color_group: 66cae480-4329-460a-a1fa-5a80a3569411
-          colorFromGroup: background
-    styles:
-      color_group: primary
   - _bookshop_name: sections/sideBySideStandard
     content:
-      sectionId: null
+      sectionId:
+      heading:
+        _bookshop_name: generic/heading
+        content:
+          highlightEyebrow: false
+          eyebrow: ''
+          headline: Our Services
+          description: ''
+          buttons: []
+          headingHierarchy: h2
+        styles:
+          contentAlignment: center
+          textAlignment: center
+          visualInterest: none
+          visualInterestColor: '#000000'
+          highContrast: false
+          contrastColorGroup:
+          contrastAgainst:
+          textClassOverride:
+      entries:
+        - _bookshop_name: generic/leftRight
+          content:
+            heading:
+              _bookshop_name: generic/heading
+              content:
+                highlightEyebrow: false
+                eyebrow: ''
+                headline: Service 1
+                description: >-
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                buttons: []
+                headingHierarchy: h2
+              styles:
+                contentAlignment: left
+                textAlignment: left
+                visualInterest: none
+                visualInterestColor: '#000000'
+                highContrast: false
+                contrastColorGroup:
+                contrastAgainst:
+                textClassOverride:
+            image:
+              _bookshop_name: generic/image
+              imagePath: /assets/uploads/custom-coffee-grinds/2148209248.jpg
+              imageAlt:
+              yAxisPosition:
+              imageSizes:
+              imageWidths:
+              class:
+              imageNumber:
+            entryNumber: 0
+          styles:
+            color_group: primary
+            colorFromGroup: background
+        - _bookshop_name: generic/leftRight
+          content:
+            heading:
+              _bookshop_name: generic/heading
+              content:
+                highlightEyebrow: false
+                eyebrow: ''
+                headline: Service 2
+                description: >-
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                buttons: []
+                headingHierarchy: h2
+              styles:
+                contentAlignment: left
+                textAlignment: left
+                visualInterest: none
+                visualInterestColor: '#000000'
+                highContrast: false
+                contrastColorGroup:
+                contrastAgainst:
+                textClassOverride:
+            image:
+              _bookshop_name: generic/image
+              imagePath: /assets/uploads/custom-coffee-grinds/2148209248.jpg
+              imageAlt:
+              yAxisPosition:
+              imageSizes:
+              imageWidths:
+              class:
+              imageNumber:
+            entryNumber: 0
+          styles:
+            color_group: primary
+            colorFromGroup: background
+    styles:
+      color_group: 66cae480-4329-460a-a1fa-5a80a3569411
+      startImageRight: false
+      fullWidth: false
+  - _bookshop_name: sections/sideBySideStandard
+    content:
+      sectionId:
       heading:
         _bookshop_name: generic/heading
         content:
@@ -135,9 +179,9 @@ content_blocks:
           visualInterest: none
           visualInterestColor: '#000000'
           highContrast: false
-          contrastColorGroup: null
-          contrastAgainst: null
-          textClassOverride: null
+          contrastColorGroup:
+          contrastAgainst:
+          textClassOverride:
       entries:
         - _bookshop_name: generic/leftRight
           content:
@@ -160,18 +204,18 @@ content_blocks:
                 visualInterest: none
                 visualInterestColor: '#000000'
                 highContrast: false
-                contrastColorGroup: null
-                contrastAgainst: null
-                textClassOverride: null
+                contrastColorGroup:
+                contrastAgainst:
+                textClassOverride:
             image:
               _bookshop_name: generic/image
               imagePath: /assets/uploads/home/2148366651.jpg
-              imageAlt: null
-              yAxisPosition: null
-              imageSizes: null
-              class: null
-              imageNumber: null
-              imageWidths: null
+              imageAlt:
+              yAxisPosition:
+              imageSizes:
+              imageWidths:
+              class:
+              imageNumber:
             entryNumber: 0
           styles:
             color_group: 66cae480-4329-460a-a1fa-5a80a3569411
@@ -182,7 +226,7 @@ content_blocks:
       fullWidth: true
   - _bookshop_name: sections/simpleForm
     content:
-      sectionId: null
+      sectionId:
       heading:
         _bookshop_name: generic/heading
         content:
@@ -198,14 +242,16 @@ content_blocks:
           visualInterest: none
           visualInterestColor: '#000000'
           highContrast: false
-          contrastColorGroup: null
-          contrastAgainst: null
-          textClassOverride: null
+          contrastColorGroup:
+          contrastAgainst:
+          textClassOverride:
       form:
         _bookshop_name: simple/formBuilder
-        formName: Home Contact
         sectionId: contact
-        successPage: null
+        inboxKey:
+        formName: Home Contact
+        subject:
+        successPage:
         form_elements:
           - _bookshop_name: generic/form/textInput
             label: First Name
@@ -246,34 +292,8 @@ content_blocks:
           colorFromGroup: primary
           ghostButton: false
           formSubmit: true
-        inboxKey: null
-        subject: null
     styles:
       color_group: primary
-  - _bookshop_name: sections/blogCardsPartial
-    contents:
-      sectionId: null
-      showNote: true
-      heading:
-        _bookshop_name: generic/headingHorizontal
-        content:
-          highlightEyebrow: false
-          eyebrow: ''
-          headline: Industry insights
-          description: These are some insights about our industry.
-          buttons: []
-          headingHierarchy: h2
-        styles:
-          headingRight: false
-          visualInterest: none
-          visualInterestColor: '#000000'
-          highContrast: false
-          contrastColorGroup: null
-          contrastAgainst: null
-      randomize: false
-    styles:
-      color_group: primary
-      cardStyle: default
 _inputs:
   removeFromNavigation:
     hidden: true
@@ -292,7 +312,7 @@ _inputs:
     hidden: '!addToCollections'
     type: multiselect
     options:
-      values: 'data.pageCollections.tags[*]'
+      values: data.pageCollections.tags[*]
   collectionImage:
     hidden: '!addToCollections'
   imageAltText:
@@ -327,4 +347,3 @@ _inputs:
       removeformat: true
       copyformatting: true
 ---
-
