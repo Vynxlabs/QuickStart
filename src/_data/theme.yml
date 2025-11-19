@@ -1,0 +1,116 @@
+primaryColor_group:
+  name: Primary
+  textColor: '#3c3c3c'
+  backgroundColor: '#f8f4ef'
+  primaryColor: '#a66b3f'
+  secondaryColor: '#e0b984'
+  accentColor: '#7a9652'
+customColor_groups:
+  - name: Primary Dark
+    textColor: '#c2c2c2'
+    backgroundColor: '#120d08'
+    primaryColor: '#c08559'
+    secondaryColor: '#7a541f'
+    accentColor: '#92ae6b'
+    id: 5c9075f8-80f9-4482-b041-91cffdfe02be
+  - name: Primary Alternate Background
+    textColor: '#3c3c3c'
+    backgroundColor: '#ffffff'
+    primaryColor: '#a66b3f'
+    secondaryColor: '#e0b984'
+    accentColor: '#7a9652'
+    id: 66cae480-4329-460a-a1fa-5a80a3569411
+heading_font: Alegreya Sans
+content_font: Fira Sans
+logo_font: Oswald
+button_rounding: rounded
+image_rounding: rounded
+container_rounding: rounded
+_inputs:
+  button_rounding:
+    comment: >-
+      This will change the rounding of all the buttons on the site. Each option
+      mentions which brand it is best suited for, and how many pixels of
+      rounding is applied. The brand mentioned is just what is commonly used,
+      but not rule
+    type: select
+    options:
+      allow_empty: false
+      value_key: id
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
+      values:
+        - id: rounded-none
+          name: None - Formal / Luxury (0px)
+        - id: rounded-sm
+          name: Rounded Small - Techie (2px)
+        - id: rounded
+          name: Rounded - Clean and simple (4px)
+        - id: rounded-md
+          name: Rounded Medium - Friendly (6px)
+        - id: rounded-lg
+          name: Rounded Large - Friendly/Quirky (8px)
+        - id: rounded-xl
+          name: Rounded Extra Large - Quirky (12px)
+        - id: rounded-full
+          name: Rounded Full - Very Quirky (Circular)
+  image_rounding:
+    type: select
+    comment: >-
+      This will change the rounding of all the images on the site. Each option
+      mentions which brand it is best suited for, and how many pixels of
+      rounding is applied. The brand mentioned is just what is commonly used,
+      but not rule
+    options:
+      allow_empty: false
+      value_key: id
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
+      values:
+        - id: rounded-none
+          name: None - Formal / Luxury (0px)
+        - id: rounded-sm
+          name: Rounded Small - Techie (2px)
+        - id: rounded
+          name: Rounded - Clean and simple (4px)
+        - id: rounded-md
+          name: Rounded Medium - Friendly (6px)
+        - id: rounded-lg
+          name: Rounded Large - Friendly/Quirky (8px)
+        - id: rounded-xl
+          name: Rounded Extra Large - Quirky (12px)
+  container_rounding:
+    type: select
+    comment: >-
+      This will change the rounding of all the containers (Anything  that isn't
+      a button or image. e.g. cards, form input boxes, etc) on the site. Each
+      option mentions which brand it is best suited for, and how many pixels of
+      rounding is applied. The brand mentioned is just what is commonly used,
+      but not rule
+    options:
+      allow_empty: false
+      value_key: id
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
+      values:
+        - id: rounded-none
+          name: None - Formal / Luxury (0px)
+        - id: rounded-sm
+          name: Rounded Small - Techie (2px)
+        - id: rounded
+          name: Rounded - Clean and simple (4px)
+        - id: rounded-md
+          name: Rounded Medium - Friendly (6px)
+        - id: rounded-lg
+          name: Rounded Large - Friendly/Quirky (8px)
+        - id: rounded-xl
+          name: Rounded Extra Large - Quirky (12px)
