@@ -9,9 +9,9 @@ removeFromNavigation: false
 eleventyNavigation:
   key: Home
   order: 1
-  title:
-  parent:
-  url:
+  title: null
+  parent: null
+  url: null
 pageLink: /
 permalink: >-
   {% if pageLink == 'blog' or pageLink == 'Blog' %}/{{pageLink | slugify}}{% if
@@ -21,7 +21,7 @@ permalink: >-
   }}/index.html{% else %}/{% assign title = title | slugify %}{{
   page.filePathStem | fileSubstringFilter | append: title | downcase
   }}/index.html{%endif %}
-metaDesc:
+metaDesc: null
 customCode:
   headCode: ''
   bodyCode: ''
@@ -31,7 +31,7 @@ hero:
   _bookshop_name: sections/fullImageHero
   content:
     highlightEybrow: false
-    sectionId:
+    sectionId: null
     eyebrow: Building a website shouldn't be hard
     headline: A Modern Small Business Template
     description: >-
@@ -49,12 +49,12 @@ hero:
     image:
       _bookshop_name: generic/image
       imagePath: /assets/uploads/home/142005.jpg
-      imageAlt:
-      yAxisPosition:
-      imageSizes:
-      imageWidths:
-      class:
-      imageNumber:
+      imageAlt: null
+      yAxisPosition: null
+      imageSizes: null
+      imageWidths: null
+      class: null
+      imageNumber: null
   styles:
     color_group: primary
     contentAlignment: left
@@ -63,7 +63,7 @@ hero:
 content_blocks:
   - _bookshop_name: sections/sideBySideStandard
     content:
-      sectionId:
+      sectionId: null
       heading:
         _bookshop_name: generic/heading
         content:
@@ -79,9 +79,9 @@ content_blocks:
           visualInterest: none
           visualInterestColor: '#000000'
           highContrast: false
-          contrastColorGroup:
-          contrastAgainst:
-          textClassOverride:
+          contrastColorGroup: null
+          contrastAgainst: null
+          textClassOverride: null
       entries:
         - _bookshop_name: generic/leftRight
           content:
@@ -104,18 +104,18 @@ content_blocks:
                 visualInterest: none
                 visualInterestColor: '#000000'
                 highContrast: false
-                contrastColorGroup:
-                contrastAgainst:
-                textClassOverride:
+                contrastColorGroup: null
+                contrastAgainst: null
+                textClassOverride: null
             image:
               _bookshop_name: generic/image
               imagePath: /assets/uploads/custom-coffee-grinds/2148209248.jpg
-              imageAlt:
-              yAxisPosition:
-              imageSizes:
-              imageWidths:
-              class:
-              imageNumber:
+              imageAlt: null
+              yAxisPosition: null
+              imageSizes: null
+              imageWidths: null
+              class: null
+              imageNumber: null
             entryNumber: 0
           styles:
             color_group: primary
@@ -141,18 +141,18 @@ content_blocks:
                 visualInterest: none
                 visualInterestColor: '#000000'
                 highContrast: false
-                contrastColorGroup:
-                contrastAgainst:
-                textClassOverride:
+                contrastColorGroup: null
+                contrastAgainst: null
+                textClassOverride: null
             image:
               _bookshop_name: generic/image
               imagePath: /assets/uploads/custom-coffee-grinds/2148209248.jpg
-              imageAlt:
-              yAxisPosition:
-              imageSizes:
-              imageWidths:
-              class:
-              imageNumber:
+              imageAlt: null
+              yAxisPosition: null
+              imageSizes: null
+              imageWidths: null
+              class: null
+              imageNumber: null
             entryNumber: 0
           styles:
             color_group: primary
@@ -163,7 +163,7 @@ content_blocks:
       fullWidth: false
   - _bookshop_name: sections/sideBySideStandard
     content:
-      sectionId:
+      sectionId: null
       heading:
         _bookshop_name: generic/heading
         content:
@@ -179,9 +179,9 @@ content_blocks:
           visualInterest: none
           visualInterestColor: '#000000'
           highContrast: false
-          contrastColorGroup:
-          contrastAgainst:
-          textClassOverride:
+          contrastColorGroup: null
+          contrastAgainst: null
+          textClassOverride: null
       entries:
         - _bookshop_name: generic/leftRight
           content:
@@ -204,18 +204,18 @@ content_blocks:
                 visualInterest: none
                 visualInterestColor: '#000000'
                 highContrast: false
-                contrastColorGroup:
-                contrastAgainst:
-                textClassOverride:
+                contrastColorGroup: null
+                contrastAgainst: null
+                textClassOverride: null
             image:
               _bookshop_name: generic/image
               imagePath: /assets/uploads/home/2148366651.jpg
-              imageAlt:
-              yAxisPosition:
-              imageSizes:
-              imageWidths:
-              class:
-              imageNumber:
+              imageAlt: null
+              yAxisPosition: null
+              imageSizes: null
+              imageWidths: null
+              class: null
+              imageNumber: null
             entryNumber: 0
           styles:
             color_group: 66cae480-4329-460a-a1fa-5a80a3569411
@@ -226,7 +226,7 @@ content_blocks:
       fullWidth: true
   - _bookshop_name: sections/simpleForm
     content:
-      sectionId:
+      sectionId: null
       heading:
         _bookshop_name: generic/heading
         content:
@@ -242,16 +242,16 @@ content_blocks:
           visualInterest: none
           visualInterestColor: '#000000'
           highContrast: false
-          contrastColorGroup:
-          contrastAgainst:
-          textClassOverride:
+          contrastColorGroup: null
+          contrastAgainst: null
+          textClassOverride: null
       form:
         _bookshop_name: simple/formBuilder
         sectionId: contact
-        inboxKey:
+        inboxKey: null
         formName: Home Contact
-        subject:
-        successPage:
+        subject: null
+        successPage: null
         form_elements:
           - _bookshop_name: generic/form/textInput
             label: First Name
@@ -312,7 +312,7 @@ _inputs:
     hidden: '!addToCollections'
     type: multiselect
     options:
-      values: data.pageCollections.tags[*]
+      values: 'data.pageCollections.tags[*]'
   collectionImage:
     hidden: '!addToCollections'
   imageAltText:
@@ -347,3 +347,4 @@ _inputs:
       removeformat: true
       copyformatting: true
 ---
+
